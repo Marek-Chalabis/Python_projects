@@ -12,7 +12,7 @@
 > Program simulates the game Tamagotchi but here you can have multiple unique animals
 
 ## Screenshots
-![img](./img.PNG)
+![img](img.PNG)
 
 ## Technologies
 * Python - version 3.8.2
