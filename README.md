@@ -1,8 +1,12 @@
-# Projects done with Python, every project have own README file just click on project name and you will be redirected into that project
+# Projects done with Python
+> Every project have own README file just click on project name and you will be redirected into that project
+
 ## The list has been divided into 3 categories
+
 * [Big](#Big)
 * [Medium](#Medium)
 * [Small](#Small)
+
 ###### keep in mind that is my subjective opinion, and size of project is compared to others
 
 ### Big
