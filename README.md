@@ -11,21 +11,21 @@
 
 ### Big
 
-#### [Notes_creator](Notes_creator/)
+#### [Notes_creator](Notes_creator)
 > Program uses wikipedia API to get data and create custom .docx file in different formats(to learn or to cheat)
 
 ### Medium
 
-#### [War_game_auto](War_game_auto/README.md)
+#### [War_game_auto](War_game_auto)
 > Simulator of the modified war game
 
 ### Small
 
-#### [Knowledge_tournament](Knowledge_tournament/README.md)
+#### [Knowledge_tournament](Knowledge_tournament)
 > Program generates questions from text files, saves best scores of each player
 
-#### [Farma_słodziaków](Farma_łodziaków/README.md)
+#### [Farma_słodziaków](Farma_łodziaków)
 > Program simulates the game Tamagotchi but here you can have multiple unique animals
 
-#### [Minor_scripts](Minor_scripts/README.md)
+#### [Minor_scripts](Minor_scripts)
 > Couple of minor scripts to do specific small task
