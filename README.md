@@ -16,7 +16,8 @@
 
 ### Medium
 
-
+#### [War_game_auto](War_game_auto/README.md)
+> Simulator of the modified war game
 
 ### Small
 

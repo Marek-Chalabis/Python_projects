@@ -1,10 +1,11 @@
 # to make error disappear follow the instructions to the file path and change
 # "lis = BeautifulSoup(html).find_all('li')"    to    "lis = BeautifulSoup(html, features="html.parser").find_all('li')"
-import wikipedia
 import os
+from datetime import date
+
+import wikipedia
 from docx import Document
 from docx.shared import Pt
-from datetime import date
 
 
 def input_number(message, search_range):
