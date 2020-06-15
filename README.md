@@ -11,7 +11,7 @@
 
 ### Big
 
-#### [Notes_creator](Notes_creator/README.md)
+#### [Notes_creator](Notes_creator/)
 > Program uses wikipedia API to get data and create custom .docx file in different formats(to learn or to cheat)
 
 ### Medium
