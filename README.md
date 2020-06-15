@@ -19,6 +19,9 @@
 #### [War_game_auto](War_game_auto)
 > Simulator of the modified war game
 
+#### [Tic_tac_toe](Tic_tac_toe)
+> Tic tac toe game with different level difficulty
+
 #### [Track_polish_securities](Track_polish_securities)
 > Program tracks Polish stock exchange, shows best days, days when x% was > or < and dates when x% was specific
 
