@@ -19,6 +19,9 @@
 #### [War_game_auto](War_game_auto)
 > Simulator of the modified war game
 
+#### [Track_polish_securities](Track_polish_securities)
+> Program tracks Polish stock exchange, shows best days, days when x% was > or < and dates when x% was specific
+
 ### Small
 
 #### [Knowledge_tournament](Knowledge_tournament)
