@@ -30,6 +30,12 @@ Idea behind the project was that the all the actions are done on server side. Pr
 
 1. Install Python and Django
 2. Copy repository and run in virtual environment
+3. Run this commands:
+   ```
+   python manage.py makemigrations
+   python manage.py migrate
+   python manage.py runserver
+   ```
 
 ## Features
 
