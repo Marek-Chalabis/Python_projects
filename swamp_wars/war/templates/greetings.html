@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="text-align:center" class="mt-4">
+        <h1>Welcome</h1>
+        <h2>On this website you will fight enormous monsters!!!</h2>
+        <br>
+        <h4>Shall we begin?</h4>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-sm">
+              <a href="{% url 'create' %}" class="btn btn-primary mt-2 btn-lg active" role="button" aria-pressed="true">Create new Avatar</a>
+            </div>
+            <div class="col-sm">
+                <h3>Write your username to continue journey</h3>
+              <form method="post" action="#">
+                {% csrf_token %}
+                  <input type="text" name="player" placeholder="{{ player }}"></br>
+                    <button type="submit" class="btn btn-primary mt-2 mb-2 btn-lg active">I'm ready!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </div>
+{% endblock %}

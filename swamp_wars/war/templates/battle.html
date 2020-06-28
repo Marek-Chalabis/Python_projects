@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    {% if cheat %}
+        <div class="text-center">
+            You cant fight other players beats!!!
+            <a href="{% url 'battle' avatar.beast_set.last.id avatar.id %}" class="btn btn-primary btn-block active mt-2 mb-2" role="button" aria-pressed="true">Fight your beasts!!!</a>
+        </div>
+
+    {% else %}
+
+        {% if avatar.HP < 1 and enemy.HP < 1 %}
+            <div class="text-center mt-3">
+                <h1>On the last breath, enemy reach you and strikes one last time killing you</h1><br>
+                This is the end of your journey<br>
+                Go and see your statistic<br>
+                <a href="{% url 'summary' avatar.id %}" class="btn btn-primary btn-lg btn-block mt-3 mb-3" role="button" aria-pressed="true">Summary</a>
+            </div>
+
+        {% elif enemy.HP < 1 %}
+
+            <div class="text-center mt-3">
+                <h1>You killed <b>{{ enemy.name }}</b></h1>
+                <h2>Now its time to rest and LVL UP!!!</h2>
+                    <a href="{% url 'rest' enemy.id avatar.id %}" class="btn btn-primary btn-lg btn-block mt-3 mb-3" role="button" aria-pressed="true">Rest</a>
+            </div>
+
+        {% elif avatar.HP < 1 %}
+
+            <div class="text-center mt-3">
+                <h1>The enemy strike you down!!</h1><br>
+                This is the end of your journy<br>
+                Go and see your statistic<br>
+                <a href="{% url 'summary' avatar.id %}" class="btn btn-primary btn-lg btn-block mt-3 mb-3" role="button" aria-pressed="true">Summary</a>
+            </div>
+
+        {% else %}
+
+            <h1 class="text-center mt-3">Stats</h1><br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">{{ avatar.name }}</th>
+                          <th scope="col">{{ enemy.name }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <th scope="row">race</th>
+                          <td>{{ avatar.race }}</td>
+                          <td>{{ enemy.race }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">DMG</th>
+                          <td>{{ avatar.DMG }}</td>
+                          <td>{{ enemy.DMG }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">DEF</th>
+                          <td>{{ avatar.DEF }}</td>
+                          <td>{{ enemy.DEF }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">DEX</th>
+                          <td>{{ avatar.DEX }}</td>
+                          <td>{{ enemy.DEX }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            <h3>Course of the fight:</h3>
+                <br>
+                    <div style="background: #85adad;">
+                        {{ battle_info }}
+                    </div>
+                <br>
+            <table class="table">
+                <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">HP before round</th>
+                  <th scope="col">HP after round</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">{{ avatar.name }}</th>
+                          <td class="text-warning">{{ avatar_before_fight }}</td>
+                          <td class="text-info">{{ avatar.HP }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">{{ enemy.name }}</th>
+                          <td class="text-warning">{{ enemy_before_fight }}</td>
+                          <td class="text-info">{{ enemy.HP }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="{% url 'battle' enemy.id avatar.id %}" class="btn btn-primary btn-lg btn-block mt-2 mb-2" role="button" aria-pressed="true">Fight!</a>
+        {% endif %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div  class="text-center mt-2">
+        <h1>{{ avatar.name }} was</h1>
+        <h2 class="text-warning">{{ avatar.call }}</h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">{{ avatar.name }}</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">race</th>
+              <td>{{ avatar.race }}</td>
+        </tr>
+        <tr>
+          <th scope="row">DMG</th>
+              <td>{{ avatar.DMG }}</td>
+        </tr>
+        <tr>
+          <th scope="row">DEF</th>
+              <td>{{ avatar.DEF }}</td>
+        </tr>
+        <tr>
+          <th scope="row">DEX</th>
+              <td>{{ avatar.DEX }}</td>
+        </tr>
+        <tr>
+            <th scope="row">LVL</th>
+              <td>{{ avatar.LVL }}</td>
+        </tr>
+        </tbody>
+    </table>
+<a href="{% url 'greetings' %}" class="btn btn-primary btn-block active mt-2 mb-2" role="button" aria-pressed="true">Go for another adventure</a>
+{% endblock %}
+

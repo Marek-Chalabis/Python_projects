@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    {% if no_cheat %}
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Race</th>
+          <th scope="col">DMG</th>
+          <th scope="col">DEF</th>
+          <th scope="col">DEX</th>
+          <th scope="col">HP</th>
+          <th scope="col">LVL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+              <td>{{ avatar.race }}</td>
+              <td>{{ avatar.DMG }}</td>
+              <td>{{ avatar.DEF }}</td>
+              <td>{{ avatar.DEX }}</td>
+              <td>{{ avatar.HP }}</td>
+              <td>{{ avatar.LVL }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <div class="text-center">
+        <h2>Thanks to the rest you will regenerate some HP</h2>
+        <h3>{{ avatar.name }} can lvl up. Choose your:</h3>
+    </div>
+    <form method="POST" class="text-center">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn btn-primary btn-lg btn-block mt-2 mb-2">Ok, I'm ready to kill another one</button>
+    </form>
+
+    {% else %}
+        <div class="text-center">
+        <h1>Cheater!!!!</h1>
+            <br>
+            I know what are you trying to do!<br>
+            You can't<br>
+            - add more points if you didn't kill your beast<br>
+            - regenerate more HP<br>
+            - use another players beasts to lvl up<br>
+            You already rested and leveled up, go and kil <div class="text-danger">your monsters</div>
+        </div>
+    <a href="{% url 'battle' avatar.beast_set.last.id avatar.id %}" class="btn btn-primary btn-block active mt-2 mb-2" role="button" aria-pressed="true">For Kingdom and Glory!!!</a>
+    {% endif %}
+{% endblock %}

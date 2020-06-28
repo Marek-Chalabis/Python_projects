@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div style="text-align:center" class="mt-2">
+        <h1>Ok let's create your avatar</h1><br>
+            <h2>
+                Magic bones gave you
+                <div class="text-warning">
+                    {{ form.points}}
+                </div>
+                points
+            </h2>
+        <h4>(distribute your points between the statistics)</h4>
+
+        <form method="POST">
+            <div style="background: #669999;">
+                {% csrf_token %}
+                 {{ form|crispy }}
+            </div>
+            <button type="submit" class="btn btn-primary mt-2 mb-2">I'm ready!</button>
+        </form>
+    </div>
+{% endblock %}
