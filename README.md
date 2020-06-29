@@ -12,6 +12,10 @@
 
 ### Big
 
+#### [Web_scraping](Web_scraping)
+
+> Asynchronous web scrapping
+
 #### [Bending_detection](Bending_detection)
 
 > The image analysis program can be used, e.g. after cutting a sheet with a waterjet

@@ -1,4 +1,4 @@
-# Notes creator
+# Bending detection
 
 > The image analysis program can be used for example after cutting a sheet with a waterjet
 
