@@ -60,7 +60,7 @@
 
 > Program generates questions from text files, saves best scores of each player
 
-#### [Farma_słodziaków](Farma_łodziaków)
+#### [Farma_słodziaków](Farma_słodziaków)
 
 > Program simulates the game Tamagotchi but here you can have multiple unique animals
 
