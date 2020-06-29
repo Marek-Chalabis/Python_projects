@@ -16,7 +16,7 @@ Web scraping by a given phrase in .txt file (links to websites needs to be separ
 
 Features:
 
-- web scraping is only done on HTML part of website (js and CSS are excluded)
+- web scraping is only done on HTML tags part of website (js and CSS are excluded)
 
 - asynchronous web scraping
 
