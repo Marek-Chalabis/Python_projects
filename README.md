@@ -44,6 +44,10 @@
 
 ### Small
 
+#### [Class_car](Class_car)
+
+> Class Car, custom Exception, tests
+
 #### [Knowledge_tournament](Knowledge_tournament)
 
 > Program generates questions from text files, saves best scores of each player
