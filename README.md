@@ -44,6 +44,10 @@
 
 ### Small
 
+#### [Algorithm](Algorithm)
+
+> Algorithm to solve given task
+
 #### [Class_car](Class_car)
 
 > Class Car, custom Exception, tests
