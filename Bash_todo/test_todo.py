@@ -18,8 +18,6 @@ def return_hash(test_text, text_to_find):
 def test_todo_application():
     """
     Fully automated tests for 3 task that takes place in past, 'today' and future.
-    After tests they will be removed
-    ! It's better to test it on Different DB go to todo_database and change DB_name
     """
 
     # different times to check
