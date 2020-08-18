@@ -13,7 +13,7 @@
 
 ## General info
 
-Idea behind the project was that the all the actions are done on server side. Prevents player from cheating like form reloading page to gain more exp points or regenerate hp, fight weaker beasts from other player playthrough. Player can continue his journey by inputting name of his/her avatar
+Idea behind the project was that the all the actions are done on server side. Prevents player from cheating like form reloading page to gain more exp points or regenerate hp, fight weaker beasts from other player playthrough. Player can continue his journey by inputting name of his/her avatar.
 
 ## Screenshots
 
