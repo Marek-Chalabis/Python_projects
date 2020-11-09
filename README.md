@@ -16,6 +16,10 @@
 
 > Asynchronous web scrapping
 
+#### [Shopify_client](Shopify_client)
+
+> Client console API to handle Shopify API(Product section) *project focused on tests
+
 #### [Bash_todo](Bash_todo)
 
 > Script to manage the task list through terminal
@@ -24,11 +28,11 @@
 
 > The image analysis program can be used, e.g. after cutting a sheet with a waterjet
 
+### Medium
+
 #### [Notes_creator](Notes_creator)
 
 > Program uses wikipedia API to get data and create custom .docx file in different formats(to learn or to cheat)
-
-### Medium
 
 #### [swamp_wars](swamp_wars)
 

@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "1test_main_field_1": 1,
+      "1test_main_field_2": 2,
+      "1nested_test_1": [
+        {
+          "1nested_test_1_field_1": 11,
+          "1nested_test_1_field_2": 12,
+          "1nested_test_1_field_3": 13
+        }
+      ],
+      "1nested_test_2": [
+        {
+          "1nested_test_2_field_1": 21
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "2test_main_field_1": 1,
+      "2test_main_field_2": 2,
+      "2nested_test_1": [
+        {
+          "2nested_test_1_field_1": 11,
+          "2nested_test_1_field_2": 12,
+          "2nested_test_1_field_3": 13
+        }
+      ],
+      "2nested_test_2": [
+        {
+          "2nested_test_2_field_1": 21
+        }
+      ]
+    }
+  ]
+}
